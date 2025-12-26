@@ -177,6 +177,10 @@ Expected performance on various hardware:
 
 ## Installation
 
+**📘 Complete Setup Guide**: See [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed installation instructions
+
+**⚡ Quick Environment Check**: Run `bash check_environment.sh` to verify your setup
+
 ### Basic Installation (Image Segmentation)
 
 ```bash
@@ -192,9 +196,19 @@ pip install torch transformers pillow requests opencv-python numpy tqdm
 # For latest SAM3 support
 pip install git+https://github.com/huggingface/transformers.git
 
-# Optional: TensorRT (for acceleration)
-# Follow NVIDIA's TensorRT installation guide
+# Optional: TensorRT (for 2-4x acceleration)
+pip install tensorrt pycuda
+# See SETUP_GUIDE.md for TensorRT installation details
 ```
+
+### Environment-Specific Setup
+
+Different environments have different requirements. See [ENVIRONMENT_SETUP.md](ENVIRONMENT_SETUP.md) for:
+- Local GPU workstations
+- Cloud GPU instances (AWS, GCP, Azure)
+- Google Colab / Kaggle
+- NVIDIA Jetson devices
+- Docker containers
 
 ## Project Layout
 
