@@ -1,0 +1,29 @@
+# SAM3-TensorRT Requirements
+# Core dependencies for video tracking and image segmentation
+
+# Deep Learning Framework
+torch>=2.0.0
+
+# Transformers (SAM3 support)
+transformers>=4.35.0
+
+# Image Processing
+pillow>=10.0.0
+opencv-python>=4.8.0
+
+# Utilities
+numpy>=1.24.0
+requests>=2.31.0
+tqdm>=4.66.0
+
+# Optional: For ONNX export
+onnx>=1.15.0
+onnxruntime>=1.16.0
+
+# Optional: For development
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.1.0
+
+# Note: TensorRT must be installed separately
+# Follow: https://docs.nvidia.com/deeplearning/tensorrt/install-guide/
